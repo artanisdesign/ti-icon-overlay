@@ -1,5 +1,5 @@
 # ti-icon-overlay
-Add version number to your app icon, i'd suggest on your build server.
+Add version number to your app icon, i'd suggest do it on your build server.
 ##Usage
 
 ```
