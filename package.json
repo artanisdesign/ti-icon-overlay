@@ -1,8 +1,8 @@
 {
   "name": "ti-icon-overlay",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Small script to add build number to your app icon. It can make your QA happy.",
-  "main": "index.js",
+  "main": "ti-icon-overlay",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,12 +23,12 @@
   "author": "Gergely Cziva - Artanis",
   "license": "ISC",
   "dependencies": {
+    "fs": "0.0.2",
     "glob": "^5.0.3",
     "gm": "^1.17.0"
   },
-  "main": "ti-icon-overlay",
   "bin": {
     "ti-icon-overlay": "index.js"
   },
-  "preferGlobal" : "true"          
+  "preferGlobal": "true"
 }
