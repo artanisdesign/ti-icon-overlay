@@ -16,6 +16,19 @@
     "version",
     "number"
   ],
-  "author": "Artanis - Gergely Cziva",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/artanisdesign/ti-icon-overlay.git"
+  },
+  "author": "Gergely Cziva - Artanis",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^5.0.3",
+    "gm": "^1.17.0"
+  },
+  "main": "ti-icon-overlay",
+  "bin": {
+    "ti-icon-overlay": "index.js"
+  },
+  "preferGlobal" : "true"          
 }
