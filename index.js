@@ -4,7 +4,7 @@ var fs = require('fs'),
     gm = require('gm'),
     glob = require("glob"),
     w, h, caption = "",
-    dir = "../**/appicon*.png";
+    dir = "../**/appicon!(-Small)*.png";
 
 console.log("start");
 var args = process.argv.slice(2);
@@ -13,12 +13,12 @@ if(process.argv[2]){
     caption = process.argv[2];
 }
 if(process.argv[3]){
-    dir = process.argv[3] + "/**/appicon*.png";
-    console.log(dir);
+    dir = process.argv[3] + "/**/appicon!(-Small)*.png";
+    //console.log(dir);
 }
 
 glob(dir, {}, function (er, files) {
-    console.log(files);
+    //console.log(files);
     for (var i=0; i < files.length; i++) {
         processImage(files[i], files[i]);
     };
@@ -35,17 +35,17 @@ function processImage(input, output){
             h = size.height;
 
             gm(input)
-            .stroke("#ff0000")
-            .fill('#ff0000')
-            .drawRectangle(0, h-h/5-5, w, h)
+            .stroke("#c20000")
+            .fill('#c20000')
+            .drawRectangle(0, h-h/5-5, w, h, 7,7)
             .font("Arial.ttf")
-            .fontSize(w/6)
+            .fontSize(Math.round(w/6))
             .stroke("#ffffff",1)
             .fill('#ffffff')
-            .drawText(0, h/13, caption, "South")
+            .drawText(0, 10, caption, "South")
             .write(output, function (err) {
               if (!err) {
-                console.log('done: '+input);
+                console.log('Done: '+input);
                 }else{
                     console.log(err);
                 }
