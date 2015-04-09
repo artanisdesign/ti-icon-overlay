@@ -1,0 +1,21 @@
+{
+  "name": "ti-icon-overlay",
+  "version": "0.1.0",
+  "description": "Small script to add build number to your app icon. It can make your QA happy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "titanium",
+    "appicon",
+    "imagemagick",
+    "overlay",
+    "build",
+    "number",
+    "version",
+    "number"
+  ],
+  "author": "Artanis - Gergely Cziva",
+  "license": "ISC"
+}
