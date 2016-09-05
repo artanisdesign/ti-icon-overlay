@@ -1,6 +1,6 @@
 {
   "name": "ti-icon-overlay",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Small script to add build number to your app icon. It can make your QA happy.",
   "main": "ti-icon-overlay",
   "scripts": {
