@@ -7,4 +7,4 @@ ti-icon-overlay "1.1.0" /path/to/your/app/dir
 
 ```
 
-Please dont forget to install all the depedencies: 
+Please dont forget to install all the depedencies:  your are going to need imagemagick.
